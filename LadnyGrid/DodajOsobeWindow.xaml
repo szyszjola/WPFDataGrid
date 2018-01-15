@@ -1,0 +1,32 @@
+﻿<Window x:Class="LadnyGrid.DodajOsobeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LadnyGrid"
+        mc:Ignorable="d"
+        Title="Dodaj nową osobę do tabeli" Height="350" Width="300">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="#FFFCF5FF" Offset="0.996"/>
+            <GradientStop Color="#FFEDECFB" Offset="0.004"/>
+        </RadialGradientBrush>
+    </Window.Background>
+    <Grid>
+        <TextBox VerticalContentAlignment="Center" x:Name="ImieText" HorizontalAlignment="Left" Height="30" Margin="119,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="123"/>
+        <Label   FontWeight="DemiBold"  VerticalContentAlignment="Center" Content="Imie:" HorizontalAlignment="Left" Margin="19,40,0,0" VerticalAlignment="Top" Height="30" Width="95"/>
+        <TextBox VerticalContentAlignment="Center" x:Name="NazwiskoText" HorizontalAlignment="Left" Height="30" Margin="119,75,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="123"/>
+        <Label FontWeight="DemiBold"  VerticalContentAlignment="Center" Content="Nazwisko:" HorizontalAlignment="Left" Margin="19,75,0,0" VerticalAlignment="Top" Height="30" Width="95"/>
+        <ComboBox  x:Name="WiekComboBox" HorizontalAlignment="Left" Margin="119,110,0,0" VerticalAlignment="Top" Width="123" Height="30"/>
+        <Label FontWeight="DemiBold"  VerticalContentAlignment="Center" Content="Wiek:" HorizontalAlignment="Left" Margin="19,110,0,0" VerticalAlignment="Top" Height="30" Width="95"/>
+        <CheckBox x:Name="wZwiazkuCheckBox"  HorizontalAlignment="Left" Margin="119,180,0,0" VerticalAlignment="Top" Height="30" Width="51"/>
+        <TextBox VerticalContentAlignment="Center" x:Name="EmailText" HorizontalAlignment="Left" Height="30" Margin="119,145,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="123"/>
+        <Label   FontWeight="DemiBold"  VerticalContentAlignment="Center" Content="Email:" HorizontalAlignment="Left" Margin="19,145,0,0" VerticalAlignment="Top" Height="30" Width="95"/>
+        <Label   FontWeight="DemiBold"  VerticalContentAlignment="Center" Content="W związku:" HorizontalAlignment="Left" Margin="19,180,0,0" VerticalAlignment="Top" Height="30" Width="95"/>
+        <Label   FontWeight="DemiBold"  VerticalContentAlignment="Center" Content="Płeć:" HorizontalAlignment="Left" Margin="19,215,0,0" VerticalAlignment="Top" Height="30" Width="95"/>
+        <RadioButton x:Name="KobietaRadioButton" IsChecked="True" Content="Kobieta" HorizontalAlignment="Left" Margin="19,250,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="MezycznaRadioButton" Content="Mężczyzna" HorizontalAlignment="Left" Margin="19,273,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="DodajButton" Content="Dodaj " HorizontalAlignment="Left" Margin="150,241,0,0" VerticalAlignment="Top" Width="92" Height="38" Click="DodajButton_Click"/>
+
+    </Grid>
+</Window>
